@@ -1,3 +1,4 @@
+// http://www.imooc.com/read/29/article/262     从零入门到工程化实践webpack
 const webpack = require('webpack');
 var path = require('path');
 const DLL_MODE = false;
@@ -13,6 +14,7 @@ const ENTRY = {
 };
 module.exports = {
 	...ENTRY,
+	mode: 'production',
 	plugins: (() => {
 		return DLL_MODE ? [
 			new webpack.DllReferencePlugin({
