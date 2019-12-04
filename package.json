@@ -10,11 +10,13 @@
     "build-es": "webpack --mode production ./src/es/index.js --module-bind js=babel-loader",
     "build-dll": "webpack --config webpack.dll.config.js",
     "builder": "webpack --config webpack.config.js",
+    "compiler": "babel src --out-dir dist/es5 --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ashen",
   "license": "MIT",
   "devDependencies": {
+    "@babel/cli": "^7.7.4",
     "@babel/core": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
     "babel-loader": "^8.0.6",
